@@ -8,6 +8,6 @@ toys = Category.create!(name: "Toys")
     description: "Description for product #{i}",
     price: (10 + i).to_f,
     stock: 50,
-    category: [electronics, books, toys].sample
+    category: [ electronics, books, toys ].sample
   )
 end

@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: [:show, :update, :destroy]
-  before_action :authenticate_request, only: [:create, :update, :destroy]
+  before_action :set_product, only: [ :show, :update, :destroy ]
+  before_action :authenticate_request, only: [ :create, :update, :destroy ]
 
   def index
     @products = Product.includes(:category)
